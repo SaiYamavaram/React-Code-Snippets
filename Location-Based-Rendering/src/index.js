@@ -22,7 +22,7 @@ export default class App extends Component {
 			return <SeasonDisplay lat={this.state.lat} />;
 		else if (this.state.errMsg && !this.state.lat)
 			return <div>Error: {this.state.errMsg} </div>;
-		else return <Spinner message={"Acce pt Location Request"}></Spinner>;
+		else return <Spinner message={"Accecpt Location Request"}></Spinner>;
 	}
 	render() {
 		return <div className='border red'>{this.renderContent()}</div>;
